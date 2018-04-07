@@ -827,7 +827,7 @@ namespace rwe
                 // TODO: return player's team instead of player ID
                 return unit.owner.value;
             }
-            case CobValueId::UnitBuildpercentLeft:
+            case CobValueId::UnitBuildPercentLeft:
             {
                 auto targetUnitId = UnitId(arg1);
                 return 0; // TODO

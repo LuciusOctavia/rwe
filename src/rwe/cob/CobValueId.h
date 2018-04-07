@@ -33,7 +33,7 @@ namespace rwe
         MaxId,
         MyId,
         UnitTeam,
-        UnitBuildpercentLeft,
+        UnitBuildPercentLeft,
         UnitAllied
     };
 }
