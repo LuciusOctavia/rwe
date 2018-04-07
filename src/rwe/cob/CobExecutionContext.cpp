@@ -714,7 +714,10 @@ namespace rwe
             case CobValueId::StandingMoveOrders:
                 return 0; // TODO
             case CobValueId::Health:
-                return sim->getUnit(unitId).hitPoints;
+            {
+                const auto& unit = sim->getUnit(unitId);
+                return unit.hitPoints / unit.maxHitPoints;
+            }
             case CobValueId::InBuildStance:
                 return false; // TODO
             case CobValueId::Busy:
